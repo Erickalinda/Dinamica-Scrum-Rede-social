@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Perfil</title>
+    <style>
+
+        body {
+            background-color: #e6f2e6;
+            font-family: Arial, sans-serif;
+            color: #2b4d2b;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            color: #1a3d1a;
+        }
+
+        #edit-profile-form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        #edit-profile-form label {
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        #edit-profile-form input[type="text"],
+        #edit-profile-form input[type="file"],
+        #edit-profile-form textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #edit-profile-form button[type="submit"] {
+            background-color: #2b4d2b;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #edit-profile-form button[type="submit"]:hover {
+            background-color: #1a3d1a;
+        }
+
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .nav-buttons button {
+            background-color: #2b4d2b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+
+        .nav-buttons button a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .nav-buttons button:hover {
+            background-color: #1a3d1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nature-image"></div>
+        <h1>Editar Perfil</h1>
+        <form id="edit-profile-form">
+            <label for="profile-pic">Foto de Perfil</label>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*">
+
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" value="Nome do Modelo/Estilista">
+
+            <label for="username">Nome de Usuário</label>
+            <input type="text" id="username" name="username" value="@nomeusuario">
+
+            <label for="bio">Bio</label>
+            <textarea id="bio" name="bio" rows="4">Uma breve descrição sobre você...</textarea>
+
+            <button type="submit">Salvar Alterações</button>
+        </form>
+        <div class="nav-buttons">
+            <button><a href="perfil.html">Cancelar</a></button>
+        </div>
+    </div>
+</body>
+
+</html>

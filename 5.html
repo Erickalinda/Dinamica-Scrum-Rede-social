@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - JELKViews</title>
+    <style>
+
+        body {
+            background-color: #e6f2e6;
+            font-family: Arial, sans-serif;
+            color: #2b4d2b;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        header {
+            width: 100%;
+            background-color: #1a3d1a;
+            padding: 1em 0;
+            position: fixed;
+            top: 0;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav li {
+            margin: 0 20px;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .chat-container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .chat-container h1 {
+            margin-bottom: 20px;
+            color: #1a3d1a;
+            text-align: center;
+        }
+
+        .conversations-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .conversation {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .conversation-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .conversation-header h2 {
+            font-size: 18px;
+            color: #2b4d2b;
+            margin: 0;
+        }
+
+        .conversation-header span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .conversation-messages {
+            margin-bottom: 20px;
+        }
+
+        .conversation-messages p {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .conversation-form {
+            display: flex;
+        }
+
+        .conversation-form input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-size: 16px;
+        }
+
+        .conversation-form button {
+            background-color: #2b4d2b;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .conversation-form button:hover {
+            background-color: #1a3d1a;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="chat-container">
+        <h1>Chat</h1>
+        <ul class="conversations-list">
+            <li class="conversation">
+                <div class="conversation-header">
+                    <h2>@amigo1</h2>
+                    <span>Online</span>
+                </div>
+                <div class="conversation-messages">
+                    <p>Que foto incrível, adorei!</p>
+                </div>
+                <form class="conversation-form">
+                    <input type="text" placeholder="Digite uma mensagem..." required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </li>
+            <li class="conversation">
+                <div class="conversation-header">
+                    <h2>@amigo2</h2>
+                    <span>Offline</span>
+                </div>
+                <div class="conversation-messages">
+                    <p>Os raios de sol ali</p>
+                    <p>Por favor, posta isso amg</p>
+                </div>
+                <form class="conversation-form">
+                    <input type="text" placeholder="Digite uma mensagem..." required>
+                    <button type="submit">Enviar</button>
+                </form>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

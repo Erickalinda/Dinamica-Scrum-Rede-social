@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar Amigo</title>
+    <style>
+        body {
+            background-color: #e6f2e6;
+            font-family: Arial, sans-serif;
+            color: #2b4d2b;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .container h1 {
+            margin-bottom: 20px;
+            color: #1a3d1a;
+        }
+
+        #add-friend-form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        #add-friend-form label {
+            margin-bottom: 10px;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        #add-friend-form input[type="text"] {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        #add-friend-form button[type="submit"] {
+            background-color: #2b4d2b;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        #add-friend-form button[type="submit"]:hover {
+            background-color: #1a3d1a;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="nature-image"></div>
+        <h1>Conecte-se com Amigos</h1>
+        <form id="add-friend-form">
+            <label for="username">Nome de usuário do amigo:</label>
+            <input type="text" id="username" name="username" required>
+            <button type="submit">Enviar Solicitação</button>
+        </form>
+    </div>
+</body>
+
+</html>
